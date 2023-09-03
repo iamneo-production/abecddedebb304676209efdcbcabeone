@@ -1,44 +1,44 @@
-*{
-    margin:0;
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-body{
-    text-align: center;
-    align-items: center;
-}
 .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     width: 300px;
-}
+  }
 
-.box {
-    width: 100px;
-    height: 100px;
+  .box {
+    width: 75px;
+    height: 75px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 50px;
+    cursor: pointer;
     font-weight: 500;
-    cursor: pointer;
-}
+    text-shadow: 3cm;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
 
-button {
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
+  .box:hover {
+    background-color: #9e9090;
+    transform: scale(1.05);
+  }
 
-#winner {
-    font-size: 24px;
-}
-#message {
+  #message {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    border: 2px solid #333; /* Add border styles */
-    padding: 10px; /* Add padding to the message */
-}
+    border: 1px solid #333;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  #winner {
+    font-size: 24px;
+  }

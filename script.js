@@ -42,7 +42,7 @@ for (let combination of winCombinations) {
 }
 if (!winner && board.every(box => box !== "")) {
     document.getElementById("winner").innerText = "It's a draw!";
-}
+    }
 }
 
 // Reset the board
