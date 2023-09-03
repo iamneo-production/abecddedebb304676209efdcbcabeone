@@ -35,16 +35,3 @@ button {
 #winner {
     font-size: 24px;
 }
-
-#score-table {
-    margin-top: 20px;
-    border-collapse: collapse;
-    width: 300px;
-}
-
-#score-table th,
-#score-table td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-}
