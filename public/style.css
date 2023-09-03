@@ -1,12 +1,44 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+  }
 
-@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap");
+  .box {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    text-shadow: 3cm;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
 
-body {
-    background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-family: "Radio Canada", sans-serif;
+  .box:hover {
+    background-color: #9e9090;
+    transform: scale(1.05);
+  }
+
+  #message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #333;
+    padding: 10px;
+    width: 150px;
   }
   
-/* Enter your styling here */
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  #winner {
+    font-size: 24px;
+  }
